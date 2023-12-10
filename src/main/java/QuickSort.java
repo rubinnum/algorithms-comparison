@@ -47,4 +47,5 @@ public class QuickSort implements Algorithm {
         array[startPos] = array[secondPos];
         array[secondPos] = temp;
     }
+
 }
