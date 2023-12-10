@@ -20,27 +20,27 @@ public class UnitTests {
         int[] reversedData = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
 
         log.info("Executing tests on Insertion Sort");
-        runTestOn(insertionSort, randomData);
-        runTestOn(insertionSort, sortedData);
-        runTestOn(insertionSort, reversedData);
+        runTestOn(insertionSort, Arrays.copyOf(randomData, randomData.length));
+        runTestOn(insertionSort, Arrays.copyOf(sortedData, sortedData.length));
+        runTestOn(insertionSort, Arrays.copyOf(reversedData, reversedData.length));
         log.info("Insertion Sort passed all tests");
 
         log.info("Executing tests on Quick Sort");
-        runTestOn(quickSort, randomData);
-        runTestOn(quickSort, sortedData);
-        runTestOn(quickSort, reversedData);
+        runTestOn(quickSort, Arrays.copyOf(randomData, randomData.length));
+        runTestOn(quickSort, Arrays.copyOf(sortedData, sortedData.length));
+        runTestOn(quickSort, Arrays.copyOf(reversedData, reversedData.length));
         log.info("Insertion Sort passed all tests");
 
         log.info("Executing tests on Radix Sort");
-        runTestOn(radixSort, randomData);
-        runTestOn(radixSort, sortedData);
-        runTestOn(radixSort, reversedData);
+        runTestOn(radixSort, Arrays.copyOf(randomData, randomData.length));
+        runTestOn(radixSort, Arrays.copyOf(sortedData, sortedData.length));
+        runTestOn(radixSort, Arrays.copyOf(reversedData, reversedData.length));
         log.info("Radix Sort passed all tests");
 
         log.info("Executing tests on Heap Sort");
-        runTestOn(heapSort, randomData);
-        runTestOn(heapSort, sortedData);
-        runTestOn(heapSort, reversedData);
+        runTestOn(heapSort, Arrays.copyOf(randomData, randomData.length));
+        runTestOn(heapSort, Arrays.copyOf(sortedData, sortedData.length));
+        runTestOn(heapSort, Arrays.copyOf(reversedData, reversedData.length));
         log.info("Heap Sort passed all tests");
 
     }
