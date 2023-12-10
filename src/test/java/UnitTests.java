@@ -1,18 +1,32 @@
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Slf4j
 public class UnitTests {
 
     InsertionSort insertionSort = new InsertionSort();
     QuickSort quickSort = new QuickSort();
+    RadixSort radixSort = new RadixSort();
 
     @Test
     public void executeAlgorithmsTests() {
+
+        log.info("Executing tests on Insertion Sort");
         runTestOn(insertionSort);
+        log.info("Insertion Sort passed all tests");
+
+        log.info("Executing tests on Quick Sort");
         runTestOn(quickSort);
+        log.info("Insertion Sort passed all tests");
+
+        log.info("Executing tests on Radix Sort");
+        runTestOn(radixSort);
+        log.info("Radix Sort passed all tests");
+
     }
 
     private void runTestOn(Algorithm algorithm) {
