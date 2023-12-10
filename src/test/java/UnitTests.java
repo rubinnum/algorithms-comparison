@@ -8,9 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Slf4j
 public class UnitTests {
 
-    InsertionSort insertionSort = new InsertionSort();
-    QuickSort quickSort = new QuickSort();
-    RadixSort radixSort = new RadixSort();
+    public static final InsertionSort insertionSort = new InsertionSort();
+    public static final QuickSort quickSort = new QuickSort();
+    public static final RadixSort radixSort = new RadixSort();
+    public static final HeapSort heapSort = new HeapSort();
 
     @Test
     public void executeAlgorithmsTests() {
@@ -26,6 +27,10 @@ public class UnitTests {
         log.info("Executing tests on Radix Sort");
         runTestOn(radixSort);
         log.info("Radix Sort passed all tests");
+
+        log.info("Executing tests on Heap Sort");
+        runTestOn(heapSort);
+        log.info("Heap Sort passed all tests");
 
     }
 
